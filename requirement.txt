@@ -1,0 +1,16 @@
+timm
+easydict
+progressbar
+evaluate
+scikit-learn==1.2.2
+pandas>=1.5.3
+pydantic==1.10.7
+promptsource==0.2.3
+peft==0.7.0
+byted-wandb
+prettytable
+jsonlines
+transformers
+flash-attn
+deepspeed==0.13.1
+sentencepiece
