@@ -19,7 +19,7 @@
 
 ## 使用场景
 
-`safetygpt`分支主要支持3个场景，`预训练(Pretrain)`、`继续预训练(Continual Pretrain)`、`监督微调(Supervised Finetune)`。
+主要支持3个场景，`预训练(Pretrain)`、`继续预训练(Continual Pretrain)`、`监督微调(Supervised Finetune)`。
 
 ### 预训练(Pretrain)
 
