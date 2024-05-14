@@ -36,6 +36,7 @@ cd safetygpt
 bash distributed_train.sh configs/yi_6b_pretrain_stage.yml
 ```
 - 优化目标：采用Next Token Prediction优化所有的tokens。
+
 $ \mathcal{L}=-\frac{1}{N}\sum_{t=1}^{N}\log{P(w_t|w_1,...,w_{t-1})} $
 
 ### 继续预训练(Continual Pretrain)
@@ -58,6 +59,8 @@ cd safetygpt
 bash distributed_train.sh configs/yi_6b_continual_pretrain_stage.yml
 ```
 - 优化目标：采用Next Token Prediction优化`assistant`的tokens。
+
+
 $$
 \mathcal{L}=-\frac{1}{N}\sum_{t=1}^{N}\log{P(w_{assist}|w_{user}, w_{system})}
 $$
@@ -80,6 +83,7 @@ cd safetygpt
 bash distributed_train.sh configs/yi_6b_sft_stage.yml
 ```
 - 优化目标：采用Next Token Prediction优化`output`的tokens。
+
 $$
 \mathcal{L}=-\frac{1}{N}\sum_{t=1}^{N}\log{P(w_{output}|w_{instruction}, w_{input})}
 $$
